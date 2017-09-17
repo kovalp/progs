@@ -27,3 +27,4 @@ Installation
 Usage
 -----
 
+  http://nanosurf.fzu.cz/wiki/doku.php?id=benzen_eigenvalues

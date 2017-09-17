@@ -1,0 +1,12 @@
+&OPTION
+  basisfile="answer.bas"
+  nstepf = 1
+  icluster = 1
+  iqout = 3
+  ifixcharge = 0
+  dt = 0.5
+&END
+&OUTPUT
+  iwrteigen = 1
+&END
+
