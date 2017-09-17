@@ -1,0 +1,15 @@
+#GLINUX GLINUX GLINUX GLINUX GLINUX GLINUX GLINUX GLINUX GLINUX
+ifneq (,$(findstring GLINUX,${MACHINE}))
+	F77 = gfortran
+	F90 = ${F77}
+	BLAS = 
+	FFLAGS = -O -freal-4-real-8 -ffree-line-length-0
+	DFLAGS = -O
+	LFLAGS = -llapack -lblas -lfftw3
+	ifneq (,$(findstring DEBUG, ${MODE}))
+		FFLAGS = -C -g -O0 -check all -fpe0 -warn -traceback -debug extended
+	endif
+	CC = gcc
+	CFLAGS = -O -DLINUX
+endif
+
