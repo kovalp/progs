@@ -1,5 +1,5 @@
 &OPTION
-  basisfile="answer.bas"
+  basisfile="initial.bas"
   nstepf = 1
   icluster = 1
   iqout = 3
@@ -8,5 +8,10 @@
 &END
 &OUTPUT
   iwrteigen = 1
+  iwrtHS = 1
+  iwrtxyz = 1
+  iwrtcdcoefs = 1
+  iwrteigen = 1
+  iwrtefermi = 1
 &END
 
